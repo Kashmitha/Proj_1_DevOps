@@ -72,7 +72,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 apt update -y
 apt install docker.io -y
 systemctl start docker
-docker run -d -p 80:3000 yourdockerhub/azure-devops-app:v1
+docker run -d -p 80:3000 kashmitha/azure-devops-app:v1
 EOF
   )
 }
